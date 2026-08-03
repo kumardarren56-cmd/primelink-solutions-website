@@ -11,9 +11,13 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router";
 import logo from "../assets/brand/primelink-logo.png";
+
 import WhyChooseUs from "../components/WhyChooseUs";
 import PortfolioShowcase from "../components/PortfolioShowcase";
 import CoreServices from "../components/CoreServices";
+import Testimonials from "../components/Testimonials";
+import CompanyHighlights from "../components/CompanyHighlights";
+import FAQ from "../components/FAQ";
 
 export default function Home() {
   const whatsappMessage =
@@ -186,13 +190,19 @@ export default function Home() {
         </div>
       </section>
 
+      <CompanyHighlights />
+
       <WhyChooseUs />
+
+      <Testimonials />
 
       <PortfolioShowcase />
 
+      <FAQ />
+
       <section className="section home-cta">
         <div>
-          <p className="section-label">Let’s Work Together</p>
+          <p className="section-label">Let&apos;s Work Together</p>
 
           <h2>Tell us what solution you need</h2>
 

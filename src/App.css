@@ -3164,3 +3164,2425 @@ font-size:2.2rem;
     gap: 12px;
   }
 }
+/* ==========================
+   PHASE 2 — SOLAR PAGE
+========================== */
+
+.solar-service-page {
+  background: #ffffff;
+}
+
+.solar-service-hero {
+  min-height: 760px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    url("https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1800&q=90")
+    center/cover no-repeat;
+}
+
+.solar-service-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 21, 43, 0.97) 0%,
+      rgba(7, 21, 43, 0.88) 45%,
+      rgba(7, 21, 43, 0.38) 100%
+    );
+}
+
+.solar-service-hero-content {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 130px 0 90px;
+}
+
+.solar-service-hero-content h1 {
+  max-width: 790px;
+  margin-top: 18px;
+  color: #ffffff;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.solar-service-hero-content > p:not(.eyebrow) {
+  max-width: 740px;
+  margin-top: 24px;
+  color: #dbeafe;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.solar-hero-trust {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.solar-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.solar-hero-trust svg {
+  color: #8ddc09;
+}
+
+.solar-intro-grid,
+.solar-benefits-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.solar-intro-section h2,
+.solar-benefits-section h2 {
+  margin-top: 14px;
+  color: #0f172a;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.solar-intro-section p,
+.solar-benefits-section p {
+  margin-top: 20px;
+  color: #526174;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.solar-intro-image {
+  min-height: 560px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 43, 0.02),
+      rgba(7, 21, 43, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+}
+
+.solar-image-stat {
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  bottom: 26px;
+  padding: 22px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(7, 21, 43, 0.78);
+  backdrop-filter: blur(14px);
+}
+
+.solar-image-stat strong {
+  display: block;
+  color: #8ddc09;
+  font-size: 30px;
+}
+
+.solar-image-stat span {
+  display: block;
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.solar-intro-highlights {
+  margin-top: 34px;
+  display: grid;
+  gap: 18px;
+}
+
+.solar-intro-highlights > div {
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid #dce8ef;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.solar-intro-highlights svg {
+  flex: 0 0 auto;
+  margin-top: 4px;
+  color: #65a30d;
+  font-size: 25px;
+}
+
+.solar-intro-highlights span {
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.solar-intro-highlights strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.solar-services-section {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(141, 220, 9, 0.08),
+      transparent 32%
+    ),
+    #f7fbfd;
+}
+
+.solar-services-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.solar-service-card {
+  min-height: 310px;
+  position: relative;
+  padding: 30px;
+  border: 1px solid #dbe7ef;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.solar-service-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(141, 220, 9, 0.45);
+  box-shadow: 0 26px 58px rgba(15, 23, 42, 0.12);
+}
+
+.solar-service-number {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.solar-service-icon {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #8ddc09, #4f9d00);
+  color: #ffffff;
+  font-size: 25px;
+  box-shadow: 0 15px 34px rgba(101, 163, 13, 0.25);
+}
+
+.solar-service-card h3 {
+  margin-top: 28px;
+  color: #0f172a;
+  font-size: 23px;
+}
+
+.solar-service-card p {
+  margin-top: 14px;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+.solar-benefits-section {
+  background: #ffffff;
+}
+
+.solar-benefits-image {
+  min-height: 600px;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 43, 0.04),
+      rgba(7, 21, 43, 0.32)
+    ),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+}
+
+.solar-benefits-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.solar-benefits-list div {
+  padding: 17px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #dbe7ef;
+  border-radius: 15px;
+  background: #f8fbfd;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.solar-benefits-list svg {
+  flex: 0 0 auto;
+  color: #65a30d;
+  font-size: 19px;
+}
+
+.solar-process-section {
+  background:
+    linear-gradient(135deg, #07152b 0%, #0b2440 100%);
+}
+
+.solar-process-section .section-heading h2 {
+  color: #ffffff;
+}
+
+.solar-process-section .section-heading p {
+  color: #cbd5e1;
+}
+
+.solar-process-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.solar-process-card {
+  min-height: 310px;
+  padding: 28px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+}
+
+.solar-process-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.solar-process-top span {
+  color: #8ddc09;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.solar-process-top div {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(141, 220, 9, 0.16);
+  color: #8ddc09;
+  font-size: 21px;
+}
+
+.solar-process-card h3 {
+  margin-top: 32px;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.solar-process-card p {
+  margin-top: 14px;
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+
+.solar-assurance-section {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(56, 189, 248, 0.08),
+      transparent 34%
+    ),
+    #f7fbfd;
+}
+
+.solar-assurance-content {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 46px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  border: 1px solid #dbe7ef;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 22px 58px rgba(15, 23, 42, 0.09);
+}
+
+.solar-assurance-content h2 {
+  margin-top: 14px;
+  max-width: 820px;
+  color: #0f172a;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.solar-assurance-content p {
+  margin-top: 20px;
+  max-width: 780px;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.solar-assurance-content > svg {
+  color: #65a30d;
+  font-size: 90px;
+}
+
+.solar-service-cta {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(7, 21, 43, 0.98),
+      rgba(11, 36, 64, 0.96)
+    );
+  text-align: center;
+}
+
+.solar-service-cta > div {
+  width: min(860px, 100%);
+  margin: 0 auto;
+}
+
+.solar-service-cta h2 {
+  margin-top: 14px;
+  color: #ffffff;
+  font-size: clamp(40px, 6vw, 66px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.solar-service-cta p {
+  margin: 24px auto 0;
+  max-width: 760px;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.solar-service-cta .hero-actions {
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .solar-intro-grid,
+  .solar-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .solar-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .solar-assurance-content {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-assurance-content > svg {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 700px) {
+  .solar-service-hero {
+    min-height: 680px;
+  }
+
+  .solar-service-hero-content {
+    padding-top: 120px;
+  }
+
+  .solar-service-hero-content h1 {
+    font-size: clamp(42px, 13vw, 58px);
+  }
+
+  .solar-service-hero-content > p:not(.eyebrow) {
+    font-size: 17px;
+  }
+
+  .solar-services-grid,
+  .solar-process-grid,
+  .solar-benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-intro-image,
+  .solar-benefits-image {
+    min-height: 390px;
+  }
+
+  .solar-service-card,
+  .solar-process-card {
+    min-height: auto;
+  }
+
+  .solar-hero-trust {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .solar-assurance-content {
+    padding: 30px 24px;
+  }
+}
+/* ==========================
+   PHASE 2 — DELIVERY PAGE
+========================== */
+
+.delivery-service-page {
+  background: #ffffff;
+}
+
+.delivery-service-hero {
+  min-height: 760px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1800&q=90")
+    center/cover no-repeat;
+}
+
+.delivery-service-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 21, 43, 0.97) 0%,
+      rgba(7, 21, 43, 0.88) 45%,
+      rgba(7, 21, 43, 0.4) 100%
+    );
+}
+
+.delivery-service-hero-content {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 130px 0 90px;
+}
+
+.delivery-service-hero-content h1 {
+  max-width: 800px;
+  margin-top: 18px;
+  color: #ffffff;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.delivery-service-hero-content > p:not(.eyebrow) {
+  max-width: 740px;
+  margin-top: 24px;
+  color: #dbeafe;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.delivery-hero-trust {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.delivery-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.delivery-hero-trust svg {
+  color: #8ddc09;
+}
+
+.delivery-intro-grid,
+.delivery-benefits-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.delivery-intro-section h2,
+.delivery-benefits-section h2 {
+  margin-top: 14px;
+  color: #0f172a;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.delivery-intro-section p,
+.delivery-benefits-section p {
+  margin-top: 20px;
+  color: #526174;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.delivery-intro-image {
+  min-height: 560px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 43, 0.02),
+      rgba(7, 21, 43, 0.42)
+    ),
+    url("https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+}
+
+.delivery-image-stat {
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  bottom: 26px;
+  padding: 22px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(7, 21, 43, 0.78);
+  backdrop-filter: blur(14px);
+}
+
+.delivery-image-stat strong {
+  display: block;
+  color: #38bdf8;
+  font-size: 30px;
+}
+
+.delivery-image-stat span {
+  display: block;
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.delivery-intro-highlights {
+  margin-top: 34px;
+  display: grid;
+  gap: 18px;
+}
+
+.delivery-intro-highlights > div {
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid #dce8ef;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.delivery-intro-highlights svg {
+  flex: 0 0 auto;
+  margin-top: 4px;
+  color: #0284c7;
+  font-size: 25px;
+}
+
+.delivery-intro-highlights span {
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.delivery-intro-highlights strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.delivery-services-section {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(56, 189, 248, 0.09),
+      transparent 32%
+    ),
+    #f7fbfd;
+}
+
+.delivery-services-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.delivery-service-card {
+  min-height: 310px;
+  position: relative;
+  padding: 30px;
+  border: 1px solid #dbe7ef;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.delivery-service-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 26px 58px rgba(15, 23, 42, 0.12);
+}
+
+.delivery-service-number {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.delivery-service-icon {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #38bdf8, #0369a1);
+  color: #ffffff;
+  font-size: 25px;
+  box-shadow: 0 15px 34px rgba(2, 132, 199, 0.25);
+}
+
+.delivery-service-card h3 {
+  margin-top: 28px;
+  color: #0f172a;
+  font-size: 23px;
+}
+
+.delivery-service-card p {
+  margin-top: 14px;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+.delivery-benefits-section {
+  background: #ffffff;
+}
+
+.delivery-benefits-image {
+  min-height: 600px;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 43, 0.04),
+      rgba(7, 21, 43, 0.34)
+    ),
+    url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+}
+
+.delivery-benefits-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.delivery-benefits-list div {
+  padding: 17px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #dbe7ef;
+  border-radius: 15px;
+  background: #f8fbfd;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.delivery-benefits-list svg {
+  flex: 0 0 auto;
+  color: #65a30d;
+  font-size: 19px;
+}
+
+.delivery-process-section {
+  background:
+    linear-gradient(135deg, #07152b 0%, #0b2440 100%);
+}
+
+.delivery-process-section .section-heading h2 {
+  color: #ffffff;
+}
+
+.delivery-process-section .section-heading p {
+  color: #cbd5e1;
+}
+
+.delivery-process-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.delivery-process-card {
+  min-height: 310px;
+  padding: 28px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+}
+
+.delivery-process-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delivery-process-top span {
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.delivery-process-top div {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  font-size: 21px;
+}
+
+.delivery-process-card h3 {
+  margin-top: 32px;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.delivery-process-card p {
+  margin-top: 14px;
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+
+.delivery-assurance-section {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(56, 189, 248, 0.08),
+      transparent 34%
+    ),
+    #f7fbfd;
+}
+
+.delivery-assurance-content {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 46px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  border: 1px solid #dbe7ef;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 22px 58px rgba(15, 23, 42, 0.09);
+}
+
+.delivery-assurance-content h2 {
+  margin-top: 14px;
+  max-width: 820px;
+  color: #0f172a;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.delivery-assurance-content p {
+  margin-top: 20px;
+  max-width: 780px;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.delivery-assurance-content > svg {
+  color: #0284c7;
+  font-size: 90px;
+}
+
+.delivery-service-cta {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(7, 21, 43, 0.98),
+      rgba(11, 36, 64, 0.96)
+    );
+  text-align: center;
+}
+
+.delivery-service-cta > div {
+  width: min(860px, 100%);
+  margin: 0 auto;
+}
+
+.delivery-service-cta h2 {
+  margin-top: 14px;
+  color: #ffffff;
+  font-size: clamp(40px, 6vw, 66px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.delivery-service-cta p {
+  margin: 24px auto 0;
+  max-width: 760px;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.delivery-service-cta .hero-actions {
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .delivery-intro-grid,
+  .delivery-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .delivery-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .delivery-assurance-content {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-assurance-content > svg {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 700px) {
+  .delivery-service-hero {
+    min-height: 680px;
+  }
+
+  .delivery-service-hero-content {
+    padding-top: 120px;
+  }
+
+  .delivery-service-hero-content h1 {
+    font-size: clamp(42px, 13vw, 58px);
+  }
+
+  .delivery-service-hero-content > p:not(.eyebrow) {
+    font-size: 17px;
+  }
+
+  .delivery-services-grid,
+  .delivery-process-grid,
+  .delivery-benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-intro-image,
+  .delivery-benefits-image {
+    min-height: 390px;
+  }
+
+  .delivery-service-card,
+  .delivery-process-card {
+    min-height: auto;
+  }
+
+  .delivery-hero-trust {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .delivery-assurance-content {
+    padding: 30px 24px;
+  }
+}
+/* ==========================
+   PHASE 2 — PROPERTY CARE PAGE
+========================== */
+
+.property-care-page {
+  background: #ffffff;
+}
+
+.property-care-hero {
+  min-height: 760px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1800&q=90")
+    center/cover no-repeat;
+}
+
+.property-care-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 21, 43, 0.97) 0%,
+      rgba(7, 21, 43, 0.88) 45%,
+      rgba(7, 21, 43, 0.4) 100%
+    );
+}
+
+.property-care-hero-content {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 130px 0 90px;
+}
+
+.property-care-hero-content h1 {
+  max-width: 860px;
+  margin-top: 18px;
+  color: #ffffff;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.property-care-hero-content > p:not(.eyebrow) {
+  max-width: 760px;
+  margin-top: 24px;
+  color: #dbeafe;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.property-care-hero-trust {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.property-care-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.property-care-hero-trust svg {
+  color: #8ddc09;
+}
+
+.property-care-intro-grid,
+.property-care-benefits-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.property-care-intro h2,
+.property-care-benefits-section h2 {
+  margin-top: 14px;
+  color: #0f172a;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.property-care-intro p,
+.property-care-benefits-section p {
+  margin-top: 20px;
+  color: #526174;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.property-care-intro-image {
+  min-height: 560px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 43, 0.02),
+      rgba(7, 21, 43, 0.42)
+    ),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+}
+
+.property-care-image-stat {
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  bottom: 26px;
+  padding: 22px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(7, 21, 43, 0.78);
+  backdrop-filter: blur(14px);
+}
+
+.property-care-image-stat strong {
+  display: block;
+  color: #8ddc09;
+  font-size: 30px;
+}
+
+.property-care-image-stat span {
+  display: block;
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.property-care-highlights {
+  margin-top: 34px;
+  display: grid;
+  gap: 18px;
+}
+
+.property-care-highlights > div {
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid #dce8ef;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.property-care-highlights svg {
+  flex: 0 0 auto;
+  margin-top: 4px;
+  color: #65a30d;
+  font-size: 25px;
+}
+
+.property-care-highlights span {
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.property-care-highlights strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.property-care-services-section {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(141, 220, 9, 0.08),
+      transparent 32%
+    ),
+    #f7fbfd;
+}
+
+.property-care-services-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.property-care-service-card {
+  min-height: 310px;
+  position: relative;
+  padding: 30px;
+  border: 1px solid #dbe7ef;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.property-care-service-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(141, 220, 9, 0.45);
+  box-shadow: 0 26px 58px rgba(15, 23, 42, 0.12);
+}
+
+.property-care-service-number {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.property-care-service-icon {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #8ddc09, #4f9d00);
+  color: #ffffff;
+  font-size: 25px;
+  box-shadow: 0 15px 34px rgba(101, 163, 13, 0.25);
+}
+
+.property-care-service-card h3 {
+  margin-top: 28px;
+  color: #0f172a;
+  font-size: 23px;
+}
+
+.property-care-service-card p {
+  margin-top: 14px;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+.property-care-benefits-section {
+  background: #ffffff;
+}
+
+.property-care-benefits-image {
+  min-height: 600px;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 43, 0.04),
+      rgba(7, 21, 43, 0.34)
+    ),
+    url("https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+}
+
+.property-care-benefits-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.property-care-benefits-list div {
+  padding: 17px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #dbe7ef;
+  border-radius: 15px;
+  background: #f8fbfd;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.property-care-benefits-list svg {
+  flex: 0 0 auto;
+  color: #65a30d;
+  font-size: 19px;
+}
+
+.property-care-process-section {
+  background:
+    linear-gradient(135deg, #07152b 0%, #0b2440 100%);
+}
+
+.property-care-process-section .section-heading h2 {
+  color: #ffffff;
+}
+
+.property-care-process-section .section-heading p {
+  color: #cbd5e1;
+}
+
+.property-care-process-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.property-care-process-card {
+  min-height: 310px;
+  padding: 28px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+}
+
+.property-care-process-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.property-care-process-top span {
+  color: #8ddc09;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.property-care-process-top div {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(141, 220, 9, 0.16);
+  color: #8ddc09;
+  font-size: 21px;
+}
+
+.property-care-process-card h3 {
+  margin-top: 32px;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.property-care-process-card p {
+  margin-top: 14px;
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+
+.property-care-assurance-section {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(141, 220, 9, 0.08),
+      transparent 34%
+    ),
+    #f7fbfd;
+}
+
+.property-care-assurance-content {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 46px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  border: 1px solid #dbe7ef;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 22px 58px rgba(15, 23, 42, 0.09);
+}
+
+.property-care-assurance-content h2 {
+  margin-top: 14px;
+  max-width: 820px;
+  color: #0f172a;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.property-care-assurance-content p {
+  margin-top: 20px;
+  max-width: 780px;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.property-care-assurance-content > svg {
+  color: #65a30d;
+  font-size: 90px;
+}
+
+.property-care-cta {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(7, 21, 43, 0.98),
+      rgba(11, 36, 64, 0.96)
+    );
+  text-align: center;
+}
+
+.property-care-cta > div {
+  width: min(860px, 100%);
+  margin: 0 auto;
+}
+
+.property-care-cta h2 {
+  margin-top: 14px;
+  color: #ffffff;
+  font-size: clamp(40px, 6vw, 66px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.property-care-cta p {
+  margin: 24px auto 0;
+  max-width: 760px;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.property-care-cta .hero-actions {
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .property-care-intro-grid,
+  .property-care-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .property-care-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .property-care-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .property-care-assurance-content {
+    grid-template-columns: 1fr;
+  }
+
+  .property-care-assurance-content > svg {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 700px) {
+  .property-care-hero {
+    min-height: 680px;
+  }
+
+  .property-care-hero-content {
+    padding-top: 120px;
+  }
+
+  .property-care-hero-content h1 {
+    font-size: clamp(42px, 13vw, 58px);
+  }
+
+  .property-care-hero-content > p:not(.eyebrow) {
+    font-size: 17px;
+  }
+
+  .property-care-services-grid,
+  .property-care-process-grid,
+  .property-care-benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .property-care-intro-image,
+  .property-care-benefits-image {
+    min-height: 390px;
+  }
+
+  .property-care-service-card,
+  .property-care-process-card {
+    min-height: auto;
+  }
+
+  .property-care-hero-trust {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .property-care-assurance-content {
+    padding: 30px 24px;
+  }
+}
+/* ==========================
+   PHASE 2 — BUSINESS SERVICES PAGE
+========================== */
+
+.business-service-page {
+  background: #ffffff;
+}
+
+.business-service-hero {
+  min-height: 760px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=90")
+    center/cover no-repeat;
+}
+
+.business-service-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 21, 43, 0.97) 0%,
+      rgba(7, 21, 43, 0.88) 45%,
+      rgba(7, 21, 43, 0.42) 100%
+    );
+}
+
+.business-service-hero-content {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 130px 0 90px;
+}
+
+.business-service-hero-content h1 {
+  max-width: 880px;
+  margin-top: 18px;
+  color: #ffffff;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.business-service-hero-content > p:not(.eyebrow) {
+  max-width: 760px;
+  margin-top: 24px;
+  color: #dbeafe;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.business-hero-trust {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.business-hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.business-hero-trust svg {
+  color: #8ddc09;
+}
+
+.business-intro-grid,
+.business-benefits-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.business-intro-section h2,
+.business-benefits-section h2 {
+  margin-top: 14px;
+  color: #0f172a;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.business-intro-section p,
+.business-benefits-section p {
+  margin-top: 20px;
+  color: #526174;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.business-intro-image {
+  min-height: 560px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 43, 0.02),
+      rgba(7, 21, 43, 0.42)
+    ),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+}
+
+.business-image-stat {
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  bottom: 26px;
+  padding: 22px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: rgba(7, 21, 43, 0.78);
+  backdrop-filter: blur(14px);
+}
+
+.business-image-stat strong {
+  display: block;
+  color: #38bdf8;
+  font-size: 30px;
+}
+
+.business-image-stat span {
+  display: block;
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.business-intro-highlights {
+  margin-top: 34px;
+  display: grid;
+  gap: 18px;
+}
+
+.business-intro-highlights > div {
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid #dce8ef;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.business-intro-highlights svg {
+  flex: 0 0 auto;
+  margin-top: 4px;
+  color: #0284c7;
+  font-size: 25px;
+}
+
+.business-intro-highlights span {
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.business-intro-highlights strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.business-services-section {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(56, 189, 248, 0.09),
+      transparent 32%
+    ),
+    #f7fbfd;
+}
+
+.business-services-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.business-service-card {
+  min-height: 310px;
+  position: relative;
+  padding: 30px;
+  border: 1px solid #dbe7ef;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.business-service-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 26px 58px rgba(15, 23, 42, 0.12);
+}
+
+.business-service-number {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.business-service-icon {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #38bdf8, #0369a1);
+  color: #ffffff;
+  font-size: 25px;
+  box-shadow: 0 15px 34px rgba(2, 132, 199, 0.25);
+}
+
+.business-service-card h3 {
+  margin-top: 28px;
+  color: #0f172a;
+  font-size: 23px;
+}
+
+.business-service-card p {
+  margin-top: 14px;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+.business-benefits-section {
+  background: #ffffff;
+}
+
+.business-benefits-image {
+  min-height: 600px;
+  border-radius: 28px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7, 21, 43, 0.04),
+      rgba(7, 21, 43, 0.34)
+    ),
+    url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.16);
+}
+
+.business-benefits-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.business-benefits-list div {
+  padding: 17px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #dbe7ef;
+  border-radius: 15px;
+  background: #f8fbfd;
+  color: #0f172a;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.business-benefits-list svg {
+  flex: 0 0 auto;
+  color: #65a30d;
+  font-size: 19px;
+}
+
+.business-process-section {
+  background:
+    linear-gradient(135deg, #07152b 0%, #0b2440 100%);
+}
+
+.business-process-section .section-heading h2 {
+  color: #ffffff;
+}
+
+.business-process-section .section-heading p {
+  color: #cbd5e1;
+}
+
+.business-process-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.business-process-card {
+  min-height: 310px;
+  padding: 28px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+}
+
+.business-process-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.business-process-top span {
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.business-process-top div {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  font-size: 21px;
+}
+
+.business-process-card h3 {
+  margin-top: 32px;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.business-process-card p {
+  margin-top: 14px;
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+
+.business-assurance-section {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(56, 189, 248, 0.08),
+      transparent 34%
+    ),
+    #f7fbfd;
+}
+
+.business-assurance-content {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  padding: 46px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  border: 1px solid #dbe7ef;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: 0 22px 58px rgba(15, 23, 42, 0.09);
+}
+
+.business-assurance-content h2 {
+  margin-top: 14px;
+  max-width: 820px;
+  color: #0f172a;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.business-assurance-content p {
+  margin-top: 20px;
+  max-width: 780px;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.business-assurance-content > svg {
+  color: #0284c7;
+  font-size: 90px;
+}
+
+.business-service-cta {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(7, 21, 43, 0.98),
+      rgba(11, 36, 64, 0.96)
+    );
+  text-align: center;
+}
+
+.business-service-cta > div {
+  width: min(860px, 100%);
+  margin: 0 auto;
+}
+
+.business-service-cta h2 {
+  margin-top: 14px;
+  color: #ffffff;
+  font-size: clamp(40px, 6vw, 66px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.business-service-cta p {
+  margin: 24px auto 0;
+  max-width: 760px;
+  color: #cbd5e1;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.business-service-cta .hero-actions {
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .business-intro-grid,
+  .business-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .business-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .business-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .business-assurance-content {
+    grid-template-columns: 1fr;
+  }
+
+  .business-assurance-content > svg {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 700px) {
+  .business-service-hero {
+    min-height: 680px;
+  }
+
+  .business-service-hero-content {
+    padding-top: 120px;
+  }
+
+  .business-service-hero-content h1 {
+    font-size: clamp(42px, 13vw, 58px);
+  }
+
+  .business-service-hero-content > p:not(.eyebrow) {
+    font-size: 17px;
+  }
+
+  .business-services-grid,
+  .business-process-grid,
+  .business-benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .business-intro-image,
+  .business-benefits-image {
+    min-height: 390px;
+  }
+
+  .business-service-card,
+  .business-process-card {
+    min-height: auto;
+  }
+
+  .business-hero-trust {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .business-assurance-content {
+    padding: 30px 24px;
+  }
+}
+/* ==========================
+   PHASE 3 — COMPANY HIGHLIGHTS
+========================== */
+
+.company-highlights-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(56, 189, 248, 0.13),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 88% 85%,
+      rgba(132, 204, 22, 0.12),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #07152b 0%, #0b2440 55%, #0e3154 100%);
+}
+
+.company-highlights-section::before {
+  content: "";
+  width: 420px;
+  height: 420px;
+  position: absolute;
+  top: -230px;
+  right: -170px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.company-highlights-section::after {
+  content: "";
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -190px;
+  left: -120px;
+  border: 1px solid rgba(132, 204, 22, 0.12);
+  border-radius: 50%;
+}
+
+.company-highlights-section .section-heading {
+  position: relative;
+  z-index: 1;
+}
+
+.company-highlights-section .section-heading h2 {
+  color: #ffffff;
+}
+
+.company-highlights-section .section-heading > p:last-child {
+  color: #c4d3e3;
+}
+
+.company-highlights-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.company-highlight-card {
+  min-height: 330px;
+  padding: 30px 26px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.09),
+      rgba(255, 255, 255, 0.035)
+    );
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 55px rgba(2, 8, 23, 0.24);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.company-highlight-card::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -65px;
+  right: -55px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.1);
+  transition: transform 0.35s ease;
+}
+
+.company-highlight-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(132, 204, 22, 0.45);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.13),
+      rgba(255, 255, 255, 0.055)
+    );
+  box-shadow: 0 30px 70px rgba(2, 8, 23, 0.34);
+}
+
+.company-highlight-card:hover::before {
+  transform: scale(1.35);
+}
+
+.company-highlight-icon {
+  width: 62px;
+  height: 62px;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: linear-gradient(135deg, #84cc16, #4d7c0f);
+  color: #ffffff;
+  font-size: 25px;
+  box-shadow: 0 15px 35px rgba(101, 163, 13, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.company-highlight-card:hover .company-highlight-icon {
+  transform: rotate(-5deg) scale(1.08);
+}
+
+.company-highlight-card > strong {
+  margin-top: 35px;
+  display: block;
+  color: #38bdf8;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.company-highlight-card h3 {
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.company-highlight-card p {
+  margin-top: 14px;
+  color: #c4d3e3;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+@media (max-width: 1050px) {
+  .company-highlights-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .company-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company-highlight-card {
+    min-height: auto;
+    padding: 27px 23px;
+  }
+
+  .company-highlight-card > strong {
+    margin-top: 28px;
+  }
+}
+/* ==========================
+   PHASE 3 � SERVICE COMMITMENT
+========================== */
+
+.service-commitment-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(56, 189, 248, 0.1),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #f8fbfd 0%, #ffffff 100%);
+}
+
+.service-commitment-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.service-commitment-card {
+  min-height: 310px;
+  padding: 30px 24px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #dbe7ef;
+  border-radius: 22px;
+  background: #ffffff;
+  text-align: left;
+  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.08);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-commitment-card::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -55px;
+  right: -45px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-commitment-card:hover {
+  transform: translateY(-9px);
+  border-color: rgba(132, 204, 22, 0.45);
+  box-shadow: 0 28px 62px rgba(15, 23, 42, 0.14);
+}
+
+.service-commitment-card:hover::after {
+  transform: scale(1.4);
+}
+
+.service-commitment-icon {
+  width: 62px;
+  height: 62px;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #84cc16, #4d7c0f);
+  color: #ffffff;
+  font-size: 25px;
+  box-shadow: 0 15px 34px rgba(101, 163, 13, 0.24);
+  transition: transform 0.3s ease;
+}
+
+.service-commitment-card:hover .service-commitment-icon {
+  transform: rotate(-5deg) scale(1.08);
+}
+
+.service-commitment-card h3 {
+  margin-top: 28px;
+  color: #0f172a;
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.service-commitment-card p {
+  margin-top: 14px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+@media (max-width: 1100px) {
+  .service-commitment-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .service-commitment-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .service-commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-commitment-card {
+    min-height: auto;
+  }
+}
+/* ==========================
+   PHASE 3 — FAQ SECTION
+========================== */
+
+.faq-section {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(56, 189, 248, 0.08),
+      transparent 30%
+    ),
+    #f7fbfd;
+}
+
+.faq-list {
+  width: min(900px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  overflow: hidden;
+  border: 1px solid #dbe7ef;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 14px 38px rgba(15, 23, 42, 0.07);
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.11);
+}
+
+.faq-item-open {
+  border-color: rgba(132, 204, 22, 0.45);
+}
+
+.faq-question {
+  width: 100%;
+  min-height: 78px;
+  padding: 22px 24px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  background: transparent;
+  color: #0f172a;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.faq-question svg {
+  flex: 0 0 auto;
+  color: #65a30d;
+  font-size: 17px;
+  transition: transform 0.25s ease;
+}
+
+.faq-item-open .faq-question svg {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.faq-item-open .faq-answer {
+  max-height: 260px;
+  opacity: 1;
+}
+
+.faq-answer p {
+  padding: 0 24px 24px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .faq-question {
+    min-height: 70px;
+    padding: 19px;
+    font-size: 15px;
+  }
+
+  .faq-answer p {
+    padding: 0 19px 20px;
+  }
+}

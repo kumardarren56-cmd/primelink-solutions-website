@@ -17,7 +17,7 @@ export default function CoreServices() {
         "Professional commercial, office, residential and specialised cleaning tailored to each property.",
       image:
         "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=88",
-      link: "/services#cleaning",
+      link: "/services/cleaning",
       featured: true,
     },
     {
@@ -27,7 +27,7 @@ export default function CoreServices() {
         "Practical solar supply, coordination, maintenance and energy consultation for homes and businesses.",
       image:
         "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1400&q=88",
-      link: "/services#solar",
+      link: "/services/solar",
     },
     {
       icon: <FaTruck />,
@@ -36,7 +36,7 @@ export default function CoreServices() {
         "Flexible local delivery, document transport and business logistics support across service areas.",
       image:
         "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1400&q=88",
-      link: "/services#delivery",
+      link: "/services/delivery",
     },
     {
       icon: <FaHome />,
@@ -45,7 +45,7 @@ export default function CoreServices() {
         "Maintenance, landscaping, repairs and grounds care that help properties remain safe and presentable.",
       image:
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1400&q=88",
-      link: "/services#property-care",
+      link: "/services/property-care",
     },
     {
       icon: <FaBriefcase />,
@@ -54,7 +54,7 @@ export default function CoreServices() {
         "Websites, automation, branding, graphic design and digital systems that support business growth.",
       image:
         "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=88",
-      link: "/services#business-services",
+      link: "/services/business",
     },
   ];
 
