@@ -22,6 +22,7 @@ import Testimonials from "../components/Testimonials";
 import PricingPackages from "../components/PricingPackages";
 import QuoteCalculator from "../components/QuoteCalculator";
 import QuoteRequestForm from "../components/QuoteRequestForm";
+import ProjectGallery from "../components/ProjectGallery";
 import PortfolioShowcase from "../components/PortfolioShowcase";
 import FAQ from "../components/FAQ";
 
@@ -213,6 +214,8 @@ export default function Home() {
       <QuoteCalculator />
 
       <QuoteRequestForm />
+
+      <ProjectGallery />
 
       <PortfolioShowcase />
 
