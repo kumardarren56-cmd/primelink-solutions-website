@@ -1,0 +1,188 @@
+.site-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 18px 24px;
+}
+
+.main-navbar {
+  width: min(1200px, 100%);
+  min-height: 78px;
+  margin: 0 auto;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: rgba(7, 21, 43, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  box-shadow: 0 16px 45px rgba(2, 8, 23, 0.3);
+  backdrop-filter: blur(14px);
+}
+
+.main-navbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.main-navbar .brand-mark {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #38bdf8, #0284c7);
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-text strong {
+  font-size: 18px;
+}
+
+.brand-text small {
+  margin-top: 4px;
+  color: #bae6fd;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.main-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+}
+
+.main-nav-links a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: color 0.25s ease;
+}
+
+.main-nav-links a:hover,
+.main-nav-links a.active {
+  color: #38bdf8;
+}
+
+.navbar-quote-button {
+  min-height: 46px;
+  padding: 0 21px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #38bdf8;
+  color: #07152b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.navbar-quote-button:hover {
+  background: #7dd3fc;
+  transform: translateY(-2px);
+}
+
+.mobile-menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 950px) {
+  .main-nav-links {
+    gap: 14px;
+  }
+
+  .main-nav-links a {
+    font-size: 12px;
+  }
+
+  .navbar-quote-button {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    padding: 12px;
+  }
+
+  .main-navbar {
+    position: relative;
+    padding: 13px 15px;
+  }
+
+  .mobile-menu-button {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar-quote-button {
+    display: none;
+  }
+
+  .main-nav-links {
+    width: 100%;
+    padding: 18px;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+    border-radius: 15px;
+    background: #07152b;
+    box-shadow: 0 18px 45px rgba(2, 8, 23, 0.35);
+  }
+
+  .main-nav-links.menu-open {
+    display: flex;
+  }
+
+  .main-nav-links a {
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .main-nav-links a:hover,
+  .main-nav-links a.active {
+    background: rgba(56, 189, 248, 0.12);
+  }
+}
+.navbar-logo {
+  height: 70px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
