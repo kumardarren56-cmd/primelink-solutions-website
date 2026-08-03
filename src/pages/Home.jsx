@@ -12,11 +12,12 @@ import {
 import { Link } from "react-router";
 import logo from "../assets/brand/primelink-logo.png";
 
-import WhyChooseUs from "../components/WhyChooseUs";
-import PortfolioShowcase from "../components/PortfolioShowcase";
 import CoreServices from "../components/CoreServices";
-import Testimonials from "../components/Testimonials";
 import CompanyHighlights from "../components/CompanyHighlights";
+import WhyChooseUs from "../components/WhyChooseUs";
+import Testimonials from "../components/Testimonials";
+import PricingPackages from "../components/PricingPackages";
+import PortfolioShowcase from "../components/PortfolioShowcase";
 import FAQ from "../components/FAQ";
 
 export default function Home() {
@@ -195,6 +196,8 @@ export default function Home() {
       <WhyChooseUs />
 
       <Testimonials />
+
+      <PricingPackages />
 
       <PortfolioShowcase />
 
