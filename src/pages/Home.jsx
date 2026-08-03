@@ -15,6 +15,8 @@ import logo from "../assets/brand/primelink-logo.png";
 import CoreServices from "../components/CoreServices";
 import CompanyHighlights from "../components/CompanyHighlights";
 import WhyChooseUs from "../components/WhyChooseUs";
+import IndustriesWeServe from "../components/IndustriesWeServe";
+import ClientLogos from "../components/ClientLogos";
 import Testimonials from "../components/Testimonials";
 import PricingPackages from "../components/PricingPackages";
 import PortfolioShowcase from "../components/PortfolioShowcase";
@@ -194,6 +196,10 @@ export default function Home() {
       <CompanyHighlights />
 
       <WhyChooseUs />
+
+      <IndustriesWeServe />
+
+      <ClientLogos />
 
       <Testimonials />
 

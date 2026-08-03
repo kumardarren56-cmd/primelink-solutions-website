@@ -5867,3 +5867,240 @@ font-size:2.2rem;
     padding: 26px 22px;
   }
 }
+/* ==========================
+   PHASE 3 — INDUSTRIES WE SERVE
+========================== */
+
+.industries-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 12% 12%,
+      rgba(56, 189, 248, 0.1),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #07152b 0%, #0b2440 58%, #0e3154 100%);
+}
+
+.industries-section::before {
+  content: "";
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  top: -210px;
+  right: -140px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.industries-section .section-heading {
+  position: relative;
+  z-index: 1;
+}
+
+.industries-section .section-heading h2 {
+  color: #ffffff;
+}
+
+.industries-section .section-heading > p:last-child {
+  color: #cbd5e1;
+}
+
+.industries-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.industry-card {
+  min-height: 280px;
+  padding: 30px 26px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.09),
+      rgba(255, 255, 255, 0.035)
+    );
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 55px rgba(2, 8, 23, 0.24);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.industry-card::after {
+  content: "";
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: -60px;
+  right: -50px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.1);
+  transition: transform 0.35s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-9px);
+  border-color: rgba(132, 204, 22, 0.45);
+  box-shadow: 0 30px 70px rgba(2, 8, 23, 0.34);
+}
+
+.industry-card:hover::after {
+  transform: scale(1.4);
+}
+
+.industry-icon {
+  width: 62px;
+  height: 62px;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #84cc16, #4d7c0f);
+  color: #ffffff;
+  font-size: 25px;
+  box-shadow: 0 15px 35px rgba(101, 163, 13, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover .industry-icon {
+  transform: rotate(-5deg) scale(1.08);
+}
+
+.industry-card h3 {
+  margin-top: 28px;
+  color: #ffffff;
+  font-size: 23px;
+  line-height: 1.3;
+}
+
+.industry-card p {
+  margin-top: 14px;
+  color: #c4d3e3;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+@media (max-width: 950px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-card {
+    min-height: auto;
+    padding: 27px 23px;
+  }
+}
+/* ==========================
+   PHASE 3 — ORGANISATION TYPES
+========================== */
+
+.client-logos-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 88% 12%,
+      rgba(132, 204, 22, 0.09),
+      transparent 28%
+    ),
+    linear-gradient(180deg, #ffffff 0%, #f7fbfd 100%);
+}
+
+.client-logos-grid {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.client-logo-card {
+  min-height: 145px;
+  padding: 25px 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid #dbe7ef;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.07);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.client-logo-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 24px 58px rgba(15, 23, 42, 0.13);
+}
+
+.client-logo-icon {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #07152b, #0e3154);
+  color: #38bdf8;
+  font-size: 23px;
+  box-shadow: 0 14px 30px rgba(7, 21, 43, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.client-logo-card:hover .client-logo-icon {
+  transform: rotate(-5deg) scale(1.08);
+}
+
+.client-logo-card span {
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.client-logos-note {
+  width: min(850px, 100%);
+  margin: 28px auto 0;
+  color: #64748b;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+  .client-logos-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .client-logos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-logo-card {
+    min-height: auto;
+  }
+}
