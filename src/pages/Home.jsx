@@ -13,12 +13,15 @@ import { Link } from "react-router";
 import logo from "../assets/brand/primelink-logo.png";
 
 import CoreServices from "../components/CoreServices";
+import StatsSection from "../components/StatsSection";
 import CompanyHighlights from "../components/CompanyHighlights";
 import WhyChooseUs from "../components/WhyChooseUs";
 import IndustriesWeServe from "../components/IndustriesWeServe";
 import ClientLogos from "../components/ClientLogos";
 import Testimonials from "../components/Testimonials";
 import PricingPackages from "../components/PricingPackages";
+import QuoteCalculator from "../components/QuoteCalculator";
+import QuoteRequestForm from "../components/QuoteRequestForm";
 import PortfolioShowcase from "../components/PortfolioShowcase";
 import FAQ from "../components/FAQ";
 
@@ -193,6 +196,8 @@ export default function Home() {
         </div>
       </section>
 
+      <StatsSection />
+
       <CompanyHighlights />
 
       <WhyChooseUs />
@@ -204,6 +209,10 @@ export default function Home() {
       <Testimonials />
 
       <PricingPackages />
+
+      <QuoteCalculator />
+
+      <QuoteRequestForm />
 
       <PortfolioShowcase />
 
