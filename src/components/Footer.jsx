@@ -46,16 +46,40 @@ export default function Footer() {
           <NavLink to="/portfolio">Portfolio</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
+
+          <br />
+
+          <NavLink to="/privacy-policy">
+            Privacy Policy
+          </NavLink>
+
+          <NavLink to="/terms-and-conditions">
+            Terms & Conditions
+          </NavLink>
         </div>
 
         <div className="footer-column">
           <h3>Our Services</h3>
 
-          <NavLink to="/services">Cleaning Services</NavLink>
-          <NavLink to="/services">Solar Solutions</NavLink>
-          <NavLink to="/services">Delivery Services</NavLink>
-          <NavLink to="/services">Property Care</NavLink>
-          <NavLink to="/services">Business Services</NavLink>
+          <NavLink to="/services/cleaning">
+            Cleaning Services
+          </NavLink>
+
+          <NavLink to="/services/solar">
+            Solar Solutions
+          </NavLink>
+
+          <NavLink to="/services/delivery">
+            Delivery Services
+          </NavLink>
+
+          <NavLink to="/services/property-care">
+            Property Care
+          </NavLink>
+
+          <NavLink to="/services/business">
+            Business Services
+          </NavLink>
         </div>
 
         <div className="footer-column footer-contact">
