@@ -1,107 +1,123 @@
+import "../App.css";
 import {
   FaArrowRight,
+  FaBroom,
   FaBuilding,
   FaCheckCircle,
-  FaClock,
+  FaClinicMedical,
   FaHome,
-  FaHospital,
   FaIndustry,
   FaSchool,
   FaShieldAlt,
+  FaSprayCan,
   FaStore,
   FaWhatsapp,
 } from "react-icons/fa";
 import { Link } from "react-router";
 
+const cleaningServices = [
+  {
+    icon: <FaBuilding />,
+    title: "Commercial Cleaning",
+    description:
+      "Reliable cleaning solutions for offices, corporate buildings, retail spaces and commercial facilities.",
+  },
+  {
+    icon: <FaBroom />,
+    title: "Office Cleaning",
+    description:
+      "Scheduled cleaning for workstations, meeting rooms, kitchens, washrooms and shared office areas.",
+  },
+  {
+    icon: <FaHome />,
+    title: "Residential Cleaning",
+    description:
+      "Professional cleaning support for homes, apartments, rental properties and move-in or move-out requirements.",
+  },
+  {
+    icon: <FaSprayCan />,
+    title: "Deep Cleaning",
+    description:
+      "Detailed cleaning for high-use areas, neglected spaces, special events and one-time restoration projects.",
+  },
+  {
+    icon: <FaShieldAlt />,
+    title: "Sanitising Services",
+    description:
+      "Focused sanitising of high-touch surfaces, shared spaces, washrooms and frequently used facilities.",
+  },
+  {
+    icon: <FaIndustry />,
+    title: "Industrial Cleaning",
+    description:
+      "Practical cleaning support for warehouses, workshops, storage facilities and operational environments.",
+  },
+];
+
+const industries = [
+  {
+    icon: <FaBuilding />,
+    title: "Corporate Offices",
+    text: "Clean and professional workplaces for staff, visitors and clients.",
+  },
+  {
+    icon: <FaStore />,
+    title: "Retail Businesses",
+    text: "Presentable stores and customer-facing spaces maintained to a high standard.",
+  },
+  {
+    icon: <FaSchool />,
+    title: "Schools",
+    text: "Hygienic learning environments for students, teachers and support staff.",
+  },
+  {
+    icon: <FaClinicMedical />,
+    title: "Medical Facilities",
+    text: "Careful cleaning support for clinics, treatment spaces and reception areas.",
+  },
+  {
+    icon: <FaIndustry />,
+    title: "Warehouses",
+    text: "Structured cleaning for storage, logistics and operational facilities.",
+  },
+  {
+    icon: <FaHome />,
+    title: "Residential Properties",
+    text: "Flexible cleaning solutions for homes, apartments and rental properties.",
+  },
+];
+
+const standards = [
+  "Clear scope of work before service begins",
+  "Flexible one-time and recurring service options",
+  "Professional communication throughout the job",
+  "Cleaning programmes tailored to the property",
+  "Final review of the agreed work",
+  "Free initial consultation and quotation",
+];
+
 export default function CleaningServices() {
   const whatsappMessage =
-    "Hello PrimeLink Solutions, I would like to request a quote for cleaning services.";
+    "Hello PrimeLink Solutions, I would like to request a quotation for cleaning services.";
 
   const whatsappLink = `https://wa.me/6798654795?text=${encodeURIComponent(
     whatsappMessage
   )}`;
 
-  const services = [
-    "Commercial and office cleaning",
-    "Residential cleaning",
-    "Deep cleaning",
-    "Move-in and move-out cleaning",
-    "Window and glass cleaning",
-    "Post-construction cleaning",
-    "Washroom sanitation",
-    "Scheduled maintenance cleaning",
-  ];
-
-  const industries = [
-    {
-      icon: <FaBuilding />,
-      title: "Corporate Offices",
-      text: "Reliable cleaning support for professional workplaces and shared office environments.",
-    },
-    {
-      icon: <FaStore />,
-      title: "Retail and Showrooms",
-      text: "Presentable customer-facing spaces that support a strong business image.",
-    },
-    {
-      icon: <FaSchool />,
-      title: "Schools and Training Centres",
-      text: "Practical cleaning plans for classrooms, offices and common areas.",
-    },
-    {
-      icon: <FaHospital />,
-      title: "Clinics and Care Facilities",
-      text: "Careful cleaning support for environments where hygiene is especially important.",
-    },
-    {
-      icon: <FaIndustry />,
-      title: "Warehouses and Facilities",
-      text: "Cleaning solutions for operational spaces, storage areas and staff facilities.",
-    },
-    {
-      icon: <FaHome />,
-      title: "Homes and Properties",
-      text: "Flexible residential cleaning for regular maintenance, moving or special occasions.",
-    },
-  ];
-
-  const process = [
-    {
-      number: "01",
-      title: "Initial Consultation",
-      text: "We discuss the property, cleaning requirements, preferred schedule and priorities.",
-    },
-    {
-      number: "02",
-      title: "Site Assessment",
-      text: "Where required, we review the space so the quotation reflects the actual work involved.",
-    },
-    {
-      number: "03",
-      title: "Tailored Proposal",
-      text: "You receive a clear recommendation covering scope, frequency and proposed pricing.",
-    },
-    {
-      number: "04",
-      title: "Service Delivery",
-      text: "The agreed cleaning service is completed according to the approved plan and schedule.",
-    },
-  ];
-
   return (
-    <div className="cleaning-service-page">
-      <section className="cleaning-service-hero">
-        <div className="cleaning-service-hero-overlay" />
+    <main className="cleaning-page">
+      <section className="cleaning-hero">
+        <div className="cleaning-hero-overlay" />
 
-        <div className="cleaning-service-hero-content">
+        <div className="cleaning-hero-content">
           <p className="eyebrow">PrimeLink Cleaning Services</p>
 
-          <h1>Professional cleaning tailored to your property</h1>
+          <h1>Professional cleaning for healthier, better-presented spaces</h1>
 
-          <p>
-            From offices and commercial facilities to homes and specialised
-            projects, PrimeLink Solutions provides flexible cleaning support
-            designed around your space, schedule and expectations.
+          <p className="cleaning-hero-description">
+            PrimeLink Solutions provides flexible commercial, office,
+            residential and specialised cleaning services designed around each
+            client&apos;s property, schedule and requirements.
           </p>
 
           <div className="hero-actions">
@@ -117,98 +133,109 @@ export default function CleaningServices() {
               rel="noreferrer"
             >
               <FaWhatsapp />
-              Discuss on WhatsApp
+              Chat on WhatsApp
             </a>
           </div>
 
           <div className="cleaning-hero-trust">
             <span>
               <FaCheckCircle />
-              Flexible schedules
+              Tailored cleaning plans
             </span>
 
             <span>
               <FaCheckCircle />
-              Tailored scope
+              One-time and scheduled services
             </span>
 
             <span>
               <FaCheckCircle />
-              Local support
+              Free initial quotation
             </span>
           </div>
         </div>
       </section>
 
-      <section className="section cleaning-service-intro">
-        <div className="cleaning-service-intro-grid">
-          <div data-aos="fade-right">
-            <p className="section-label">Cleaning That Fits Your Needs</p>
+      <section className="section cleaning-intro-section">
+        <div className="cleaning-intro-grid">
+          <div className="cleaning-intro-content" data-aos="fade-right">
+            <p className="section-label">Professional Cleaning Support</p>
 
-            <h2>A dependable approach to cleaner, healthier spaces</h2>
+            <h2>Cleaning solutions built around your property</h2>
 
             <p>
-              Every property is different. PrimeLink begins by understanding
-              the space, level of use, preferred timing and desired outcome
-              before recommending a cleaning plan.
+              Every workplace, facility and home has different cleaning
+              requirements. PrimeLink begins by understanding the property,
+              service frequency, access conditions and expected standard.
             </p>
 
             <p>
-              Services may be arranged as one-off projects, scheduled visits or
-              ongoing cleaning support for businesses and property owners.
+              From routine office cleaning to deep-cleaning projects, we prepare
+              a practical service plan that reflects the client&apos;s actual
+              needs.
             </p>
 
-            <div className="cleaning-intro-features">
+            <div className="cleaning-intro-points">
               <div>
-                <FaShieldAlt />
-                <span>
-                  <strong>Professional approach</strong>
-                  Clear scope, communication and service expectations.
-                </span>
+                <FaCheckCircle />
+                <span>Flexible service scheduling</span>
               </div>
 
               <div>
-                <FaClock />
-                <span>
-                  <strong>Flexible scheduling</strong>
-                  Service timing arranged around operational requirements.
-                </span>
+                <FaCheckCircle />
+                <span>Clear scope and quotation</span>
+              </div>
+
+              <div>
+                <FaCheckCircle />
+                <span>Professional client communication</span>
               </div>
             </div>
           </div>
 
-          <div
-            className="cleaning-service-intro-image"
-            data-aos="fade-left"
-          />
+          <div className="cleaning-intro-image" data-aos="fade-left">
+            <div className="cleaning-image-badge">
+              <strong>PrimeLink</strong>
+              <span>Cleaning Services</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="section cleaning-options-section">
+      <section className="section cleaning-services-section">
         <div className="section-heading" data-aos="fade-up">
-          <p className="section-label">Cleaning Options</p>
+          <p className="section-label">Our Cleaning Services</p>
 
-          <h2>Practical services for commercial and residential properties</h2>
+          <h2>Complete cleaning support for different environments</h2>
 
           <p>
-            Select one service or combine several into a tailored cleaning
-            package.
+            Select a service or combine several options into a tailored
+            cleaning programme.
           </p>
         </div>
 
-        <div className="cleaning-options-grid">
-          {services.map((service, index) => (
+        <div className="cleaning-services-grid">
+          {cleaningServices.map((service, index) => (
             <article
-              className="cleaning-option-card"
-              key={service}
+              className="cleaning-service-card"
+              key={service.title}
               data-aos="fade-up"
-              data-aos-delay={index * 60}
+              data-aos-delay={index * 70}
             >
-              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div className="cleaning-service-icon">{service.icon}</div>
 
-              <FaCheckCircle />
+              <span className="cleaning-service-number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
 
-              <h3>{service}</h3>
+              <h3>{service.title}</h3>
+
+              <p>{service.description}</p>
+
+              <Link to="/contact">
+                Request This Service
+                <FaArrowRight />
+              </Link>
             </article>
           ))}
         </div>
@@ -216,13 +243,13 @@ export default function CleaningServices() {
 
       <section className="section cleaning-industries-section">
         <div className="section-heading" data-aos="fade-up">
-          <p className="section-label">Who We Serve</p>
+          <p className="section-label">Industries We Support</p>
 
-          <h2>Cleaning support across different property types</h2>
+          <h2>Cleaning solutions for workplaces, facilities and homes</h2>
 
           <p>
-            PrimeLink can adapt the cleaning scope to suit workplaces,
-            customer-facing spaces, facilities and homes.
+            PrimeLink reviews each environment individually before confirming
+            the final scope and service programme.
           </p>
         </div>
 
@@ -231,10 +258,10 @@ export default function CleaningServices() {
             <article
               className="cleaning-industry-card"
               key={industry.title}
-              data-aos="zoom-in"
-              data-aos-delay={index * 70}
+              data-aos="fade-up"
+              data-aos-delay={index * 60}
             >
-              <div>{industry.icon}</div>
+              <div className="cleaning-industry-icon">{industry.icon}</div>
 
               <h3>{industry.title}</h3>
 
@@ -244,93 +271,93 @@ export default function CleaningServices() {
         </div>
       </section>
 
-      <section className="section cleaning-process-section">
-        <div className="section-heading" data-aos="fade-up">
-          <p className="section-label">Our Process</p>
+      <section className="section cleaning-standards-section">
+        <div className="cleaning-standards-grid">
+          <div className="cleaning-standards-image" data-aos="fade-right" />
 
-          <h2>A clear path from enquiry to service delivery</h2>
+          <div className="cleaning-standards-content" data-aos="fade-left">
+            <p className="section-label">Our Service Standards</p>
+
+            <h2>A clear and professional cleaning process</h2>
+
+            <p>
+              PrimeLink focuses on straightforward communication, realistic
+              service commitments and cleaning arrangements based on the
+              client&apos;s agreed requirements.
+            </p>
+
+            <div className="cleaning-standards-list">
+              {standards.map((standard) => (
+                <div key={standard}>
+                  <FaCheckCircle />
+                  <span>{standard}</span>
+                </div>
+              ))}
+            </div>
+
+            <Link className="btn btn-primary" to="/contact">
+              Arrange a Site Discussion
+              <FaArrowRight />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section cleaning-packages-section">
+        <div className="section-heading" data-aos="fade-up">
+          <p className="section-label">Flexible Service Packages</p>
+
+          <h2>Choose a starting package and tailor the final scope</h2>
 
           <p>
-            We keep the process straightforward so clients understand what
-            happens next.
+            Bronze, Silver, Gold and Platinum options are available as starting
+            points. Final pricing depends on property size, condition,
+            frequency, location and the agreed work.
           </p>
         </div>
 
-        <div className="cleaning-process-grid">
-          {process.map((step, index) => (
-            <article
-              className="cleaning-process-card"
-              key={step.number}
-              data-aos="fade-up"
-              data-aos-delay={index * 80}
-            >
-              <span>{step.number}</span>
+        <div className="cleaning-package-preview">
+          <article>
+            <span>Bronze</span>
+            <h3>Essential Cleaning</h3>
+            <p>Suitable for smaller spaces and straightforward cleaning needs.</p>
+          </article>
 
-              <h3>{step.title}</h3>
+          <article>
+            <span>Silver</span>
+            <h3>Enhanced Cleaning</h3>
+            <p>Additional attention for medium workplaces and shared areas.</p>
+          </article>
 
-              <p>{step.text}</p>
-            </article>
-          ))}
+          <article className="cleaning-package-featured">
+            <span>Gold</span>
+            <h3>Complete Cleaning</h3>
+            <p>Broader cleaning support for larger offices and facilities.</p>
+          </article>
+
+          <article>
+            <span>Platinum</span>
+            <h3>Premium Facility Support</h3>
+            <p>Tailored ongoing support for major properties and facilities.</p>
+          </article>
         </div>
       </section>
 
-      <section className="section cleaning-assurance-section">
-        <div className="cleaning-assurance-grid">
-          <div data-aos="fade-right">
-            <p className="section-label">Why PrimeLink Cleaning</p>
-
-            <h2>Service built around clear expectations</h2>
-
-            <p>
-              Our goal is to provide a cleaning arrangement that is practical,
-              easy to understand and suitable for the client’s property.
-            </p>
-          </div>
-
-          <div className="cleaning-assurance-list" data-aos="fade-left">
-            <div>
-              <FaCheckCircle />
-              Tailored recommendations
-            </div>
-
-            <div>
-              <FaCheckCircle />
-              Clear communication
-            </div>
-
-            <div>
-              <FaCheckCircle />
-              Flexible service frequency
-            </div>
-
-            <div>
-              <FaCheckCircle />
-              Combined service options
-            </div>
-
-            <div>
-              <FaCheckCircle />
-              Free initial quotation
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section cleaning-service-cta">
-        <div data-aos="zoom-in">
+      <section className="section cleaning-final-cta">
+        <div data-aos="fade-up">
           <p className="section-label">Request a Cleaning Quote</p>
 
           <h2>Tell us about your property and cleaning requirements</h2>
 
           <p>
-            Share the property type, location, preferred schedule and work
-            required. PrimeLink will review the enquiry and recommend the next
-            step.
+            PrimeLink will review the location, property size, service
+            frequency and required standard before preparing a tailored
+            quotation.
           </p>
 
           <div className="hero-actions">
             <Link className="btn btn-primary" to="/contact">
-              Start Your Quote
+              Request a Free Quote
               <FaArrowRight />
             </Link>
 
@@ -346,6 +373,6 @@ export default function CleaningServices() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

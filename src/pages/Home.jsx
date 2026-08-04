@@ -16,6 +16,7 @@ import CoreServices from "../components/CoreServices";
 import StatsSection from "../components/StatsSection";
 import CompanyHighlights from "../components/CompanyHighlights";
 import WhyChooseUs from "../components/WhyChooseUs";
+import OurProcess from "../components/OurProcess";
 import IndustriesWeServe from "../components/IndustriesWeServe";
 import ClientLogos from "../components/ClientLogos";
 import Testimonials from "../components/Testimonials";
@@ -202,6 +203,8 @@ export default function Home() {
       <CompanyHighlights />
 
       <WhyChooseUs />
+
+      <OurProcess />
 
       <IndustriesWeServe />
 
